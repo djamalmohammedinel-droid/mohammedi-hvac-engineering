@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://www.mohammedi-hvac-engineering.dz/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="components.css">
 </head>
@@ -39,8 +39,8 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <span class="tag">Ingénierie CVC · Algérie</span>
-        <h1>Concevoir juste.<br>Réaliser sans surprise.</h1>
+        <span class="eyebrow">Ingénierie CVC · Algérie</span>
+        <h1>Concevoir juste,<br><em>respirer</em> sereinement.</h1>
         <p class="lede">Études, audit, commissioning et pilotage des installations CVC pour les hôpitaux, hôtels et bâtiments complexes. Une approche d'ingénieur senior, du bilan thermique jusqu'à la réception des travaux.</p>
         <div class="hero-actions">
           <a href="contact.html" class="btn btn-primary">Demander une étude</a>
@@ -49,46 +49,35 @@
         <p class="hero-note">Missions privées &amp; sous-traitance technique · Intervention nationale</p>
       </div>
 
-      <div class="hero-diagram" aria-hidden="true">
-        <div class="diagram-label"><span>SCH-01 · Circuit primaire</span><span>Lecture système</span></div>
-        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <path id="pipeA" d="M20,60 H180 V150 H380" fill="none"/>
-            <path id="pipeB" d="M20,220 H140 V150 H240 V60 H380" fill="none"/>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#1C8A5C"/>
+              <stop offset="100%" stop-color="#0F6B45"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#DCF0E3"/>
+              <stop offset="100%" stop-color="#EAF5EE"/>
+            </linearGradient>
           </defs>
-          <!-- grille -->
-          <g stroke="#DBE1DF" stroke-width="1">
-            <line x1="0" y1="0" x2="400" y2="0"/><line x1="0" y1="300" x2="400" y2="300"/>
-            <line x1="0" y1="0" x2="0" y2="300"/><line x1="400" y1="0" x2="400" y2="300"/>
+          <circle cx="200" cy="200" r="180" fill="url(#g2)"/>
+          <g class="ribbon" fill="none" stroke="url(#g1)" stroke-width="7" stroke-linecap="round">
+            <path d="M70,150 C150,90 210,210 290,150 C330,120 340,180 310,210"/>
           </g>
-          <!-- équipements -->
-          <rect x="4" y="42" width="34" height="36" fill="#FFFFFF" stroke="#10161C" stroke-width="1.4"/>
-          <text x="21" y="98" font-family="IBM Plex Mono" font-size="9" fill="#4E5960" text-anchor="middle">GEO</text>
-
-          <rect x="4" y="202" width="34" height="36" fill="#FFFFFF" stroke="#10161C" stroke-width="1.4"/>
-          <text x="21" y="258" font-family="IBM Plex Mono" font-size="9" fill="#4E5960" text-anchor="middle">PAC</text>
-
-          <circle cx="240" cy="60" r="10" fill="#FFFFFF" stroke="#0E7C7B" stroke-width="1.6"/>
-          <circle cx="140" cy="220" r="10" fill="#FFFFFF" stroke="#0E7C7B" stroke-width="1.6"/>
-
-          <rect x="362" y="42" width="34" height="36" fill="#FFFFFF" stroke="#10161C" stroke-width="1.4"/>
-          <text x="379" y="98" font-family="IBM Plex Mono" font-size="9" fill="#4E5960" text-anchor="middle">CTA</text>
-
-          <!-- tracés -->
-          <path d="M20,60 H180 V150 H380" fill="none" stroke="#10161C" stroke-width="1.6"/>
-          <path d="M20,220 H140 V150 H240 V60 H380" fill="none" stroke="#0E7C7B" stroke-width="1.6"/>
-
-          <circle r="4.5" fill="#C4791F">
-            <animateMotion dur="6s" repeatCount="indefinite" path="M20,60 H180 V150 H380"/>
-          </circle>
-          <circle r="4.5" fill="#0E7C7B">
-            <animateMotion dur="7s" repeatCount="indefinite" path="M20,220 H140 V150 H240 V60 H380"/>
-          </circle>
+          <g class="ribbon-2" fill="none" stroke="#1C8A5C" stroke-width="4" stroke-linecap="round" opacity=".55">
+            <path d="M90,250 C160,300 230,220 300,260"/>
+          </g>
+          <g class="ribbon" fill="none" stroke="#0F6B45" stroke-width="3" stroke-linecap="round" opacity=".35">
+            <path d="M110,110 C170,150 230,90 280,120"/>
+          </g>
+          <circle cx="290" cy="150" r="7" fill="#12563B"/>
+          <circle cx="70" cy="150" r="7" fill="#1C8A5C"/>
         </svg>
       </div>
     </div>
 
-    <div class="wrap">
+    <div class="wrap" style="padding-bottom:76px;">
       <div class="stats-bar">
         <div><b>10+</b><span>Ans d'expérience</span></div>
         <div><b>27+</b><span>Références projets</span></div>
@@ -103,7 +92,7 @@
     <div class="wrap">
       <div class="section-head">
         <div>
-          <span class="tag">Missions</span>
+          <span class="eyebrow">Missions</span>
           <h2>Une expertise mobilisable au bon moment du projet.</h2>
         </div>
         <p class="desc">Des prestations ciblées, un périmètre clair, des livrables directement exploitables par vos équipes.</p>
@@ -111,7 +100,7 @@
 
       <div class="service-grid">
         <div class="service-card">
-          <span class="code">MIS-01</span>
+          <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v4H4zM7 12h2m3 0h2m3 0h2M7 16h2m3 0h2m3 0h2M4 8v13h16V8"/></svg></div>
           <h3>Études &amp; dimensionnement</h3>
           <p>Bilans thermiques, sélection des équipements, tracé des réseaux, notes de calcul et pièces écrites.</p>
           <ul>
@@ -120,7 +109,7 @@
           </ul>
         </div>
         <div class="service-card">
-          <span class="code">MIS-02</span>
+          <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-5-5"/></svg></div>
           <h3>Audit &amp; diagnostic</h3>
           <p>Relevé de l'existant, analyse des dysfonctionnements, conformité et scénarios de rénovation hiérarchisés.</p>
           <ul>
@@ -129,7 +118,7 @@
           </ul>
         </div>
         <div class="service-card">
-          <span class="code">MIS-03</span>
+          <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 13l4 4L19 7"/></svg></div>
           <h3>Commissioning &amp; réception</h3>
           <p>Revues techniques, fiches de contrôle, essais, équilibrage et dossier de réception des installations.</p>
           <ul>
@@ -138,7 +127,7 @@
           </ul>
         </div>
         <div class="service-card">
-          <span class="code">MIS-04</span>
+          <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></div>
           <h3>Suivi &amp; gestion de projet</h3>
           <p>Coordination technique, visas, contrôle qualité et assistance à la maîtrise d'ouvrage jusqu'à livraison.</p>
           <ul>
@@ -148,45 +137,45 @@
         </div>
       </div>
 
-      <p style="margin-top:28px;"><a href="services.html" class="btn btn-ghost">Voir le détail des services ↗</a></p>
+      <p style="margin-top:32px;"><a href="services.html" class="btn btn-ghost">Voir le détail des services ↗</a></p>
     </div>
   </section>
 
   <!-- SECTEURS -->
-  <section id="secteurs">
+  <section id="secteurs" style="background:var(--panel);">
     <div class="wrap">
       <div class="section-head">
         <div>
-          <span class="tag">Domaines d'intervention</span>
+          <span class="eyebrow">Domaines d'intervention</span>
           <h2>Les environnements où la précision CVC est critique.</h2>
         </div>
       </div>
 
       <div class="sector-grid">
         <div class="sector-card">
-          <span class="code">SEC-01</span>
+          <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 8v8M8 12h8"/><rect x="3" y="4" width="18" height="17" rx="2"/></svg></div>
           <h4>Santé</h4>
           <p>Hôpitaux, cliniques et locaux à exigences maîtrisées.</p>
         </div>
         <div class="sector-card">
-          <span class="code">SEC-02</span>
+          <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 20V8a2 2 0 012-2h14a2 2 0 012 2v12M3 20h18M3 13h18"/></svg></div>
           <h4>Hospitality</h4>
           <p>Hôtels et bâtiments à occupation variable.</p>
         </div>
         <div class="sector-card">
-          <span class="code">SEC-03</span>
+          <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 7h1m3 0h1M9 11h1m3 0h1M9 15h1m3 0h1"/></svg></div>
           <h4>Tertiaire</h4>
           <p>Bureaux, administrations, justice et enseignement.</p>
         </div>
         <div class="sector-card">
-          <span class="code">SEC-04</span>
+          <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21V10l6-4v4l6-4v4l6-4v15H3z"/></svg></div>
           <h4>Industrie</h4>
           <p>Locaux techniques et environnements contrôlés.</p>
         </div>
       </div>
 
-      <div style="margin-top:40px;">
-        <span class="tag" style="margin-bottom:16px; display:inline-flex;">Systèmes maîtrisés</span>
+      <div style="margin-top:44px;">
+        <span class="eyebrow" style="margin-bottom:18px; display:inline-flex;">Systèmes maîtrisés</span>
         <div class="system-tags">
           <span>Eau glacée &amp; pompes à chaleur</span>
           <span>VRV / VRF &amp; détente directe</span>
@@ -204,29 +193,29 @@
     <div class="wrap">
       <div class="section-head">
         <div>
-          <span class="tag">Méthode</span>
-          <h2>Quatre repères, un fil technique continu.</h2>
+          <span class="eyebrow">Méthode</span>
+          <h2>Quatre étapes, un fil technique continu.</h2>
         </div>
       </div>
 
       <div class="method-list">
         <div class="method-item">
-          <span class="code">PLAN·A</span>
+          <div class="num">1</div>
           <h4>Cadrer</h4>
           <p>Objectifs, usages, contraintes, normes et données disponibles.</p>
         </div>
         <div class="method-item">
-          <span class="code">CALC·B</span>
+          <div class="num">2</div>
           <h4>Calculer</h4>
           <p>Hypothèses traçables, variantes comparées et choix justifiés.</p>
         </div>
         <div class="method-item">
-          <span class="code">COORD·C</span>
+          <div class="num">3</div>
           <h4>Coordonner</h4>
           <p>Interfaces bâtiment, architecture, électricité et chantier.</p>
         </div>
         <div class="method-item">
-          <span class="code">CTRL·D</span>
+          <div class="num">4</div>
           <h4>Vérifier</h4>
           <p>Contrôles, essais, réserves et preuves de performance.</p>
         </div>
@@ -237,8 +226,11 @@
   <!-- CTA -->
   <section class="cta-band">
     <div class="wrap cta-inner">
-      <h2>Parlons du besoin avant de parler d'équipement.</h2>
-      <a href="contact.html" class="btn btn-accent">Demander une étude ↗</a>
+      <div>
+        <span class="eyebrow">Votre projet</span>
+        <h2 style="margin-top:14px;">Parlons du besoin avant de parler d'équipement.</h2>
+      </div>
+      <a href="contact.html" class="btn btn-outline">Demander une étude ↗</a>
     </div>
   </section>
 
@@ -263,7 +255,7 @@
       <div>
         <h4>Contact</h4>
         <ul>
-          <li><a href="mailto:djamalmohammedi@gmail.com">djamalmohammedi@gmail.com</a></li>
+          <li><a href="mailto:djamalmohammedi.nel@gmail.com">djamalmohammedi.nel@gmail.com</a></li>
           <li><a href="https://wa.me/213781222932">+213 781 222 932</a></li>
         </ul>
       </div>

@@ -44,6 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!validate()) return;
     var subject = encodeURIComponent("Demande de devis — MOHAMMEDI HVAC ENGINEERING");
     var body = encodeURIComponent(buildMessage());
-    window.location.href = "mailto:djamalmohammedi@gmail.com?subject=" + subject + "&body=" + body;
+    window.location.href = "mailto:djamalmohammedi.nel@gmail.com?subject=" + subject + "&body=" + body;
   });
 });
