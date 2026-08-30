@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.mohammedi-hvac-engineering.dz/sitemap.xml
+Sitemap: https://djamalmohammedinel-droid.github.io/mohammedi-hvac-engineering/sitemap.xml
