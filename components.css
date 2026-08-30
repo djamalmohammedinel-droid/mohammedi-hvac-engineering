@@ -1,0 +1,171 @@
+/* ==========================================================================
+   Hero (accueil)
+   ========================================================================== */
+.hero{ padding:72px 0 0; border-bottom:none; }
+.hero-grid{
+  display:grid; grid-template-columns:1.1fr .9fr; gap:48px; align-items:center;
+  padding-bottom:64px;
+}
+.hero h1{
+  font-size:clamp(36px,5vw,60px); margin-top:18px; max-width:600px;
+}
+.hero .lede{ margin-top:22px; max-width:460px; color:var(--ink-soft); font-size:17px; }
+.hero-actions{ display:flex; gap:14px; margin-top:34px; flex-wrap:wrap; }
+.hero-note{ margin-top:22px; font-family:var(--font-mono); font-size:12px; color:var(--ink-faint); }
+
+.hero-diagram{
+  border:1px solid var(--line); background:var(--surface); border-radius:var(--radius);
+  padding:22px; position:relative;
+}
+.hero-diagram .diagram-label{
+  font-family:var(--font-mono); font-size:11px; color:var(--ink-faint);
+  display:flex; justify-content:space-between; margin-bottom:10px;
+}
+.flow-dot{ animation:travel 6s linear infinite; }
+.flow-dot2{ animation:travel2 7s linear infinite; }
+@keyframes travel{
+  0%{ offset-distance:0%; }
+  100%{ offset-distance:100%; }
+}
+@keyframes travel2{
+  0%{ offset-distance:0%; }
+  100%{ offset-distance:100%; }
+}
+
+@media (max-width:900px){
+  .hero-grid{ grid-template-columns:1fr; }
+}
+
+/* ==========================================================================
+   Barre de repères chiffrés
+   ========================================================================== */
+.stats-bar{
+  display:grid; grid-template-columns:repeat(4,1fr);
+  border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+}
+.stats-bar div{
+  padding:26px 32px; border-left:1px solid var(--line);
+}
+.stats-bar div:first-child{ border-left:none; }
+.stats-bar b{ font-family:var(--font-display); font-size:30px; display:block; }
+.stats-bar span{ font-family:var(--font-mono); font-size:11px; color:var(--ink-soft); text-transform:uppercase; letter-spacing:.05em; }
+@media (max-width:800px){
+  .stats-bar{ grid-template-columns:repeat(2,1fr); }
+  .stats-bar div:nth-child(3){ border-left:none; }
+}
+
+/* ==========================================================================
+   Cartes services
+   ========================================================================== */
+.service-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--line); border:1px solid var(--line); }
+.service-card{ background:var(--surface); padding:36px; position:relative; }
+.service-card .code{ font-family:var(--font-mono); font-size:12px; color:var(--accent-ink); }
+.service-card h3{ font-size:21px; margin-top:16px; }
+.service-card p{ margin-top:12px; color:var(--ink-soft); font-size:14.5px; }
+.service-card ul{ margin-top:16px; }
+.service-card li{ font-size:13.5px; color:var(--ink-soft); padding-left:16px; position:relative; margin-bottom:6px; }
+.service-card li::before{ content:"—"; position:absolute; left:0; color:var(--accent); }
+@media (max-width:700px){ .service-grid{ grid-template-columns:1fr; } }
+
+/* ==========================================================================
+   Secteurs
+   ========================================================================== */
+.sector-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line); border:1px solid var(--line); }
+.sector-card{ background:var(--surface); padding:28px 24px; }
+.sector-card .code{ font-family:var(--font-mono); font-size:11px; color:var(--ink-faint); }
+.sector-card h4{ font-size:17px; margin-top:12px; }
+.sector-card p{ font-size:13px; color:var(--ink-soft); margin-top:8px; }
+@media (max-width:900px){ .sector-grid{ grid-template-columns:repeat(2,1fr); } }
+
+/* ==========================================================================
+   Méthode (repères de plan : PLAN / CALC / COORD / CTRL)
+   ========================================================================== */
+.method-list{ display:grid; grid-template-columns:repeat(4,1fr); gap:28px; }
+.method-item{ border-top:2px solid var(--ink); padding-top:18px; }
+.method-item .code{ font-family:var(--font-mono); font-size:12px; color:var(--accent-ink); }
+.method-item h4{ font-size:18px; margin-top:10px; }
+.method-item p{ font-size:13.5px; color:var(--ink-soft); margin-top:8px; }
+@media (max-width:800px){ .method-list{ grid-template-columns:1fr 1fr; } }
+@media (max-width:520px){ .method-list{ grid-template-columns:1fr; } }
+
+/* ==========================================================================
+   Systèmes maîtrisés (tags techniques)
+   ========================================================================== */
+.system-tags{ display:flex; flex-wrap:wrap; gap:10px; }
+.system-tags span{
+  font-family:var(--font-mono); font-size:12.5px; border:1px solid var(--line-strong);
+  padding:8px 14px; color:var(--ink-soft);
+}
+
+/* ==========================================================================
+   Réalisations — cartes illustrées (schémas au trait, pas de photos)
+   ========================================================================== */
+.project-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+.project-card{ border:1px solid var(--line); background:var(--surface); }
+.project-card .illus{
+  aspect-ratio:4/3; border-bottom:1px solid var(--line); background:var(--panel);
+  display:flex; align-items:center; justify-content:center; padding:24px;
+}
+.project-card .illus svg{ width:100%; height:100%; }
+.project-card .info{ padding:20px 22px 24px; }
+.project-card .cat{ font-family:var(--font-mono); font-size:11px; color:var(--accent-ink); text-transform:uppercase; letter-spacing:.05em; }
+.project-card h3{ font-size:17px; margin-top:10px; }
+.project-card p{ font-size:13.5px; color:var(--ink-soft); margin-top:8px; }
+@media (max-width:900px){ .project-grid{ grid-template-columns:1fr 1fr; } }
+@media (max-width:600px){ .project-grid{ grid-template-columns:1fr; } }
+
+/* ==========================================================================
+   Bio / à propos
+   ========================================================================== */
+.bio-grid{ display:grid; grid-template-columns:.8fr 1.2fr; gap:56px; align-items:start; }
+.bio-card{ border:1px solid var(--line); padding:28px; background:var(--surface); }
+.bio-card .initials{
+  width:56px; height:56px; border:1.5px solid var(--ink); display:flex; align-items:center; justify-content:center;
+  font-family:var(--font-display); font-weight:600; font-size:18px; margin-bottom:18px;
+}
+.bio-card h3{ font-size:20px; }
+.bio-card .role{ font-family:var(--font-mono); font-size:12px; color:var(--ink-soft); margin-top:6px; }
+.bio-card .refs{ margin-top:20px; font-family:var(--font-mono); font-size:11.5px; color:var(--ink-faint); border-top:1px solid var(--line); padding-top:16px; }
+.bio-body p{ color:var(--ink-soft); margin-bottom:16px; font-size:15.5px; }
+.bio-body p:last-child{ margin-bottom:0; }
+@media (max-width:800px){ .bio-grid{ grid-template-columns:1fr; } }
+
+.timeline{ margin-top:8px; }
+.timeline li{
+  display:grid; grid-template-columns:120px 1fr; gap:20px; padding:16px 0; border-top:1px solid var(--line);
+}
+.timeline li:last-child{ border-bottom:1px solid var(--line); }
+.timeline .yr{ font-family:var(--font-mono); font-size:13px; color:var(--accent-ink); }
+.timeline .txt{ font-size:14.5px; color:var(--ink-soft); }
+
+/* ==========================================================================
+   Contact
+   ========================================================================== */
+.contact-grid{ display:grid; grid-template-columns:.85fr 1.15fr; gap:56px; }
+.contact-info h2{ font-size:clamp(26px,3vw,34px); }
+.contact-info .lede{ margin-top:16px; color:var(--ink-soft); font-size:15.5px; max-width:420px; }
+.contact-line{ display:flex; align-items:center; gap:12px; margin-top:22px; font-family:var(--font-mono); font-size:14px; }
+.contact-line a:hover{ color:var(--accent-ink); }
+.contact-meta{ margin-top:40px; padding-top:24px; border-top:1px solid var(--line); font-size:13.5px; color:var(--ink-soft); }
+
+.form-panel{ border:1px solid var(--line); background:var(--surface); padding:32px; }
+.field{ margin-bottom:20px; }
+.field label{ display:block; font-family:var(--font-mono); font-size:11.5px; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-soft); margin-bottom:8px; }
+.field input, .field select, .field textarea{
+  width:100%; border:1px solid var(--line-strong); background:var(--bg); padding:12px 14px;
+  font-family:var(--font-body); font-size:14.5px; color:var(--ink); border-radius:var(--radius);
+}
+.field textarea{ resize:vertical; min-height:110px; }
+.field input:focus, .field select:focus, .field textarea:focus{ outline:2px solid var(--accent); outline-offset:1px; border-color:var(--accent); }
+.form-actions{ display:flex; gap:12px; flex-wrap:wrap; margin-top:6px; }
+.form-note{ margin-top:16px; font-size:12.5px; color:var(--ink-faint); }
+.form-status{ margin-top:14px; font-family:var(--font-mono); font-size:12.5px; color:var(--accent-ink); min-height:16px; }
+@media (max-width:800px){ .contact-grid{ grid-template-columns:1fr; } }
+
+/* ==========================================================================
+   CTA bande finale
+   ========================================================================== */
+.cta-band{ background:var(--panel); text-align:left; }
+.cta-inner{ display:flex; justify-content:space-between; align-items:center; gap:24px; flex-wrap:wrap; }
+.cta-inner h2{ font-size:clamp(24px,3vw,32px); max-width:520px; }
+@media (max-width:700px){ .cta-inner{ flex-direction:column; align-items:flex-start; } }
